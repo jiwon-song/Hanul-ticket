@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>예매상세페이지</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+	integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/detail_style.css?ver=3.0" />
+</head>
+<body>
+	<header>
+		<!-- index.html에서 가져오기 -->
+	<h1 class="d-none"></h1>
+		<header>
+			<div class="head">
+				<div class="site-logo">
+					<a href="http://localhost:8080/project/hanulTicket/index.html"><img src="images/logo.png" alt="hanul ticket logo" /></a>
+				</div>
+				<div class="search">
+					<label for="keywords" class="d-none">검색어</label>
+					<input type="text" id="keywords" autofocus placeholder="NMI.XX 1st 콘서트">
+					<input type="submit" id="search_bt" value="검색">
+				</div>
+				
+				<div class="top-link">
+					<a href="http://localhost:8080/project/hanulTicket/login.html">로그인</a>
+					<a href="http://localhost:8080/project/hanulTicket/join.html">회원가입</a>
+				</div>
+			</div>
+		</header>
+	<h1 class="d-none">탭(tabs)</h1>
+		<article>
+			<nav>
+				<div class="tabs">
+					<ul class="items">
+						<li class="showing"><a href="#">뮤지컬</a></li>
+						<li class="active"><a href="http://localhost:8080/project/hanulTicket/index.html">콘서트</a></li>
+						<li class="showing"><a href="#">클래식</a></li>
+						<li class="showing"><a href="#">스포츠</a></li>
+						<li class="showing"><a href="#">아동/가족</a></li>
+					</ul>	
+				</div>
+			</nav>		
+	</header>
+	<section>
+		<h2 class=d-none>공연 요약 소개 및 예매 부분</h2>
+		<article>
+			<!-- 3개를 ul로 하는 건 없을까? -->
+			<div class="reserve-front">
+				<h3 class="d-none">공연 메인 poster</h3>
+				<div class="poster">
+					<img src="images/poster1.png" alt="OOO 가수의 공연 포스터" />
+				</div>
+
+				<h3 class="d-none">공연 요약 소개</h3>
+				<div class="reserve-summary">
+					<h4 class="summary-title">장소</h4>
+					<div class="summary-text">
+						<p>고척스카이돔</p>
+					</div>
+					<h4 class="summary-title">기간</h4>
+					<div class="summary-text">
+						<p>2022.06.11~2022.06.11</p>
+					</div>
+					<h4 class="summary-title">관람시간</h4>
+					<div class="summary-text">
+						<p>240분</p>
+					</div>
+					<h4 class="summary-title">관람등급</h4>
+					<div class="summary-text">
+						<p>15세 이상</p>
+					</div>
+					<hr id="summary-line">
+					<h4 class="summary-title">가격</h4>
+					<div class="summary-text">
+						<p>
+							R석 - <span>80,000</span>원
+						</p>
+						<p>
+							S석 - <span>70,000</span>원
+						</p>
+						<p>
+							A석 - <span>60,000</span>원
+						</p>
+					</div>
+					<h4 class="summary-title">할인</h4>
+					<div class="summary-text">
+						<p>
+							장애인할인(1~3급 동반1인할인) - <span>20</span>% 할인
+						</p>
+						<p>
+							장애인할인(4~6급 본인만 할인) - <span>20</span>% 할인
+						</p>
+						<p>
+							국가유공자할인(본인만 할인) - <span>20</span>% 할인
+						</p>
+					</div>
+				</div>
+
+				<h3 class="d-none">공연 예매 안내</h3>
+				<div class="reserve">
+					<div class="calender">
+						<img src="images/calender.png" alt="예매 가능 달력" />
+					</div>
+
+					<div class="reserve-possible">
+						<h4 class="avail-title">예매가능 회차</h4>
+						<div class="avail-detail">1회차 17시</div>
+						<h4 class="avail-title">예매가능 좌석</h4>
+						<div class="avail-detail">
+							VIP석 20석<br>R석 15석<br>S석 40석<br>A석 120석
+						</div>
+					</div>
+					<div class="button-wrap">
+						<button class="button-reserve">예매하기</button>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<a href="javascript:window.scrollTo(0,0);" id="back-to-top">위로</a>
+				<h2 class="d-none">공연 예매 상세 사항</h2>
+				<div class="announce-wrap">
+					<h3 id = "annnounce">공지사항</h3>
+					<div class="annonce-detail-wrap">
+						<span>※ 티켓 예매 시 공연 안내 사항에 동의한 것으로 간주하며, 본 내용은 상황에 따라 추가·변경 될
+							수 있습니다. <br>공연 관람에 지장이나 불이익을 받지 않도록 관람 전 반드시 공연 안내사항을 재확인 바랍니다. </span> <span
+							class="red"><br><br><br><br>※ 오프라인 공연 방역패스 시행 잠정 중단 안내</span> <span><br>본 공연은 2022년 3월 1일부터 방역 패스(접종 확인 및
+							음성확인제) 시행이 잠정 중단됨에 따라 공연은 방역패스 절차없이 공연장 입장이 가능합니다.<br>단, 공연장
+							입장 시 전원 체온 체크는 유지되며, 이상 체온 대상자에게는 자가 검진 키트 등의 부가적인 검사 및 공연장 출입 불가등의
+							후속 조치가 시행될 수 있습니다.</span>
+					</div>
+				
+				
+				<h3 id = "annnounce">공연상세/출연진정보</h3>
+				</div>
+				<div class="detail-poster">
+					<img src="images/nmixx_anounce.png" style="width: 40vw; min-width: 140px;" alt="nmixx-announce" />
+				</div>
+			
+
+
+		</article>
+
+
+
+
+	</section>
+
+
+
+
+
+	<footer>
+		<!-- index.html에서 가져오기 -->
+			<nav>
+			<div class="foot-logo">
+				<a href="#">
+					<img style="margin: 50px 0 0 50px;" src="images/footer-logo.png" alt="hanul ticekt logo">
+				</a>
+			</div>
+			<ul class="links">
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">고객센터</a></li>
+			</ul>
+		<address>
+			<div class="add">
+				<p>광주광역시 서구 경열로 3길 한울직업전문학교</p>
+				<p>copyright&copy; hanul ticket all rights reserved.</p>
+			</div>
+		</address>
+	</nav>
+	</footer>
+
+</body>
+</html>
