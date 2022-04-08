@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+.d-none{
+	display: none;
+}
+a, a:link {
+	text-decoration: none;
+	color: black;
+}
+
+/*===========header===========*/
+.head{
+	display: flex;
+	justify-content: space-between;
+	margin-top:20px;
+}
+.site-logo{
+	margin-left:50px;
+}
+.search{
+	margin-top:10px;
+}
+#keywords {
+    outline: none;
+    width: 300px;
+    height: 60px;
+    border-color: #C2ACF4;
+    text-indent: 1rem;
+    box-sizing: border-box;
+    background: none;
+}
+#search_bt {
+    width: 100px;
+    height: 60px;
+    font-size: 16px;
+    background: #C2ACF4;
+    color: black;
+    border: 0;
+}
+.top-link{
+	display: inline-block;
+	margin:20px 20px 0 0;
+}
+.top-link a{
+    height: 42px;
+    padding: 0 9px;
+}
+/*===========article===========*/
+
+.items{
+	max-width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.items li {
+    line-height: 40px;
+    height: 40px;
+    flex: 200px;
+    position: relative;
+    padding: .75rem 1rem;
+	color:black;
+	background: #C2ACF4;
+	display:flex;
+	align-items: flex-end; 
+	column-gap:1rem;
+	list-style: none; 
+	font-size: 1.5rem;
+}
+.items li.active{
+	background: #9263FC;
+	color: black; 
+}
+
+nav {
+    background: #C2ACF4;
+    margin: 30px 0 0 0;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #000;
+    text-align: center;
+    margin: 50px 0;
+}
+.pos-top, .pos-bottom{
+	display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 50px;
+}
+.detail{
+	display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 50px;
+}
+.detail li:nth-child(3){
+	display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 50px;
+	position: fixed;
+}
+/*===========login==========*/
+body {
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    border:1px solid #9263FC;
+}
+ 
+.sign {
+    padding-top: 40px;
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+ 
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+ 
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+        width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+ 
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+ 
+.submit {
+  	cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: #9263FC;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px ;
+}
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    padding-top: 15px;
+}
+ 
+/*  a {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+       
+        text-decoration: none;
+    } */
+    
+@media (max-width: 600px) {
+	.main {
+          border-radius: 0px;
+       	}
+}
+/*===========footer==========*/
+.foot-logo {
+    
+    top: -16px;
+    left: 0;
+    width: 150px;
+    height: 59px;
+    background-position: 0 -65px;
+    margin: 50px 0 0 50px;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+}
+
+.foot-wrap{
+	display: flex;
+	column-gap: 30px;
+}
+p{
+	text-align: center;
+	text-transform: capitalize;
+	margin:10px 0;
+}
+.add{
+	margin:30px;
+}
