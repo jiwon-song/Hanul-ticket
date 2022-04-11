@@ -40,7 +40,7 @@
 			</div>
 		</header>
 	<h1 class="d-none">탭(tabs)</h1>
-			<nav>
+			<nav class="top-nav">
 				<div class="tabs">
 					<ul class="items">
 						<li class="showing"><a href="#">뮤지컬</a></li>
@@ -161,7 +161,7 @@
 
 	<footer>
 		<!-- index.html에서 가져오기 -->
-			<nav>
+			<nav >
 			<div class="foot-logo">
 				<a href="#">
 					<img style="margin: 50px 0 0 50px;" src="images/footer-logo.png" alt="hanul ticekt logo">
