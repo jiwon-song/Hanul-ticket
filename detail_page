@@ -34,7 +34,7 @@
 		<header>
 			<div class="head">
 				<div class="site-logo">
-					<a href="http://localhost:8080/project/hanulTicket/index.html"><img src="images/logo.png" alt="hanul ticket logo" /></a>
+					<a href="index.html"><img src="images/logo.png" alt="hanul ticket logo" /></a>
 				</div>
 				<div class="search">
 					<label for="keywords" class="d-none">검색어</label>
@@ -43,8 +43,8 @@
 				</div>
 				
 				<div class="top-link">
-					<a href="http://localhost:8080/project/hanulTicket/login.html">로그인</a>
-					<a href="http://localhost:8080/project/hanulTicket/join.html">회원가입</a>
+					<a href="login.html">로그인</a>
+					<a href="join.html">회원가입</a>
 				</div>
 			</div>
 		</header>
@@ -53,7 +53,7 @@
 				<div class="tabs">
 					<ul class="items">
 						<li class="showing"><a href="#">뮤지컬</a></li>
-						<li class="active"><a href="http://localhost:8080/project/hanulTicket/index.html">콘서트</a></li>
+						<li class="active"><a href="index.html">콘서트</a></li>
 						<li class="showing"><a href="#">클래식</a></li>
 						<li class="showing"><a href="#">스포츠</a></li>
 						<li class="showing"><a href="#">아동/가족</a></li>
@@ -170,7 +170,7 @@
 
 	<footer>
 		<!-- index.html에서 가져오기 -->
-			<nav>
+			<nav class="bottom-nav">
 			<div class="foot-logo">
 				<a href="#">
 					<img style="margin: 50px 0 0 50px;" src="images/footer-logo.png" alt="hanul ticekt logo">
